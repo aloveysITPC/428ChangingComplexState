@@ -17,8 +17,20 @@ function App() {
         Hello {firstName} {lastName}
       </h1>
       <form>
-        <input onChange={enterFname} name="fName" placeholder="First Name" />
-        <input onChange={enterLname} name="lName" placeholder="Last Name" />
+        {/* remember events for forms */}
+        <input
+          onChange={enterFname}
+          name="fName"
+          placeholder="First Name"
+          // be sure to add value to the form
+          value={firstName}
+        />
+        <input
+          onChange={enterLname}
+          name="lName"
+          placeholder="Last Name"
+          value={lastName}
+        />
         <button>Submit</button>
       </form>
     </div>
