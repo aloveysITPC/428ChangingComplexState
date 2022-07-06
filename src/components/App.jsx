@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 
 function App() {
+  //  can  two separate constants and converting them to a single constant
+  //  where the constants is a JavaScript Object.
+
+  const [fName, setFName] = useState("");
+  const [lName, setLName] = useState("");
+
   // for morecomplex states can set the intitial value to an object
   const [fullName, getFullname] = useState({ firstName: "", lastName: "" });
 
